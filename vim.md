@@ -39,4 +39,7 @@ Some basic notes on how to use VIM
 * `q:` - display command history
 * `:nohlsearch` - clear highlighting
 * `:set hlsearch` - turn search highlighting on
+* `:set number` && `:set nonumber` - turn line number on and off
+* `:set paste` && `:set nopaste` - turn paste mode on and off
+* `au FileType script set makeprg=%` - configuration to set :make to run on current file
 
