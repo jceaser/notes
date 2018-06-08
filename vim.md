@@ -31,6 +31,12 @@ Some basic notes on how to use VIM
 * `"Add` - cut and append to buffer "a"
 * `:reg` - display registers
 
+## CTags ##
+* `<ctr>-]` - jump to definition
+* `<ctr>-t` - return
+* `<ctr>-i` - forward
+* `<ctr>-o` - backwards
+
 ## other features ##
 * `<ctr-r> =` - expression register (math)
 * `:sh` - enter shell
