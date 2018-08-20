@@ -79,13 +79,21 @@ Some commands will let you interact directly with panels, like moving them aroun
 
 ## Navigation ##
 
-Now that you have multiple panels, you'll need to know how to move around. This is pretty easy. Your primary panel will be the one you can type in. Sometimes (depending on terminal emulator and font) you can use the `ctrl+b m` to "mark" the panel your in by highligting all or some of it's borders. Once you figure out which panel your in, you can use `ctrl+b` plus an arrow key to switch to the panel in the direction of the arrow you selected. Panel order wrappes around the screen, so if your on the right hand side and you press right, you end up on the far left.
+Now that you have multiple panels, you'll need to know how to move around. This is pretty easy. Your primary panel will be the one you can type in. Sometimes (depending on terminal emulator and font) you can use the `ctrl+b m` to "mark" the panel your in by highligting all or some of it's borders. Once you figure out which panel your in, you can use `ctrl+b` plus an arrow key to switch to the panel in the direction of the arrow you selected. Panel order wrappes around the screen, so if your on the right hand side and you press right, you end up on the far left. If you get lost, try using `ctrl+b m` to "mark" the boarder of your active panel (sometimes it get's confused on vertical panels)
 
 * `ctrl+b →`
 * `ctrl+b ←`
 * `ctrl+b ↑`
 * `ctrl+b ↓`
 * `ctrl+b q <number>` - panel number typed while numbers are visible
+
+While not exactly navigation, you can "zoom" in to the active panel, that is expand it to the full size while still not loosing the other panels. Do this with `ctrl-b z`. Reverse it with the same command.
+
+## Windows ##
+
+So far we have been working with just one window, that is one set of panels you view at once. To "create" a new window for new panels use `ctrl-b c`. You should have a new view with just one panel, but also, the "tab bar" at the bottom should show a new entry on the left. These tabs start with a number, the window number with the active window ending with an asterisk. You can rename these windows to "name" your collection of panels with `ctrl-b ,`, at the prompt (in the tab bar) type in a name and hit enter. To switch back and forth use the window picker with `ctrl-b w`, then use the arrows to pick your session. Pressing enter will activate your selection. Depending on your version, you may also see other sessions. You can open or collapse these with the right and left arrow.
+
+# Advanced #
 
 ## Advanced Panel Resize ##
 
@@ -99,9 +107,19 @@ Now that you have multiple panels, you'll need to know how to move around. This 
 * `ctrl+b "` - split window horizontally (add panel)
 * `ctrl+b space` - arrange panels
 * `ctrl+b m` - mark the active panel ; highlight active panel borders
+* `ctrl+b →` - move focus right
+* `ctrl+b ←` - move focus left
+* `ctrl+b ↑` - move focus up
+* `ctrl+b ↓` - move focus down
+* `ctrl+b q <number>` - panel number typed while numbers are visible
+* `ctrl+b z` - zoom a panel
 * `ctrl+b $` - rename session
+* `ctrl-b ,` - rename window
+* `ctrl-b w` - pick window
 
 # Sharing Sessions #
+
+add more content
 
 /tmp/tmux-501/default
 
