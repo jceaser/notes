@@ -117,13 +117,18 @@ So far we have been working with just one window, that is one set of panels you 
 * `ctrl-b ,` - rename window
 * `ctrl-b w` - pick window
 
+# Scripting #
+
+`ctr-b :` -> `source-file <file>`
+
 # Sharing Sessions #
 
 add more content
 
 /tmp/tmux-501/default
 
+however just use `tmux -S ~/somefile` instead
+
 # Further Reading #
 * https://gist.github.com/MohamedAlaa/2961058
-
 
