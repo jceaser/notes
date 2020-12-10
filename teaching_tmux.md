@@ -1,4 +1,3 @@
-
 # Learning TMUX #
 
 ## What is TMUX ##
@@ -118,6 +117,20 @@ So far we have been working with just one window, that is one set of panels you 
 * `ctrl-b w` - pick window
 
 # Scripting #
+TMUX commands can be written to file and loaded inside TMUX. You can do this to setup your windows and standard layouts if you have such a thing:
+
+    start-server
+
+    new-session a -s "remotes"
+    rename-session "remotes"
+	
+    new-window -n "mdlb"
+    select-pane -t 0
+    split-window -t "serv1" -h
+    split-window -t "serv2" -v
+    split-window -t "serv3" -v
+    select-layout tiled
+Then the file can be loaded with the command:
 
 `ctr-b :` -> `source-file <file>`
 
