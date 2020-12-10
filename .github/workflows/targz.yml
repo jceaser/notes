@@ -28,3 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: tar -czf ../files.tar.gz *
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: tar gz file
+          path: ../files.tar.gz
