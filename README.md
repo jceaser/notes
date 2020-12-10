@@ -1,2 +1,3 @@
 # notes
-software notes
+software notes.
+
