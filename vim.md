@@ -1,5 +1,5 @@
 # VIM Notes #
-Some basic notes on how to use VIM
+Some basic notes on how to use VIM.
 
 ## Edit ##
 * `vim scp://remoteuser@server.tld/relative/path/to/document`
